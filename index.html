@@ -6,12 +6,26 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
-  <title>Certificacion de Servicios</title>
+  <title>Certificacion de Servicios-2</title>
 </head>
 
 <body>
   <div class="main">
-    <h1 class="main__h1">Certificacion de Servicio</h1>
+    <header class="header">
+      <h1 class="main__h1">Certificacion de Servicios</h1>
+      <h2 class="main__h2">Instituto Privado Incorporado (Adscripto) a la Enseñanza Oficial <br><span>INSTITUTO “NUESTRA
+          SEÑORA DEL HUERTO”</span>
+      </h2>
+    </header>
+    <section class="section">
+      <p class="main__p">Nivel: Secundario <br>
+        Ubicado en: Belgrano Nº 269. Centro. Córdoba. Capital.</p>
+      <p class="main__p">Certifico con carácter de Declaración Jurada que <span class="persona">BORRASTERO Matias
+          Alejandro</span> D.N.I. N°:
+        <span class="dni">39.057.240</span>, prestó/a en el Establecimiento arriba mencionado los servicios docentes que
+        a continuación se detallan:
+      </p>
+    </section>
     <table class="main__tabla">
       <tbody id="tabla">
         <tr>
@@ -38,18 +52,44 @@
         </tr>
       </tbody>
     </table>
+    <section class="section">
+      <p class="main__p">
+        Hizo uso de Licencias sin Goce de Haberes: <span class="licencia">.-</span> <br><br>
+        Para presentar ante quien corresponda, se extiende el presente en Córdoba Capital a los <span
+          class="dia">16</span> días del mes de <span class="mes">mayo</span> del año <span class="year">2022</span>.
+      </p>
+    </section>
+
+    <section class="sellos">
+      <h4 class="main__h4">Sello Instituto</h4>
+      <h4 class="main__h4 firma">----------------------------<br>Firma Representante Legal</h4>
+    </section>
+    
+    <section class="section">
+      <p class="main__p">
+        El funcionario que suscribe Certifica que la firma que antecede pertenece a <span
+          class="representanteLegal">Fernanda Dotto</span> - Representante Legal
+        de acuerdo a la registrada en esta Repartición.<br>
+        Córdoba, <span class="dia">16</span> de <span class="mes">Mayo</span> de <span class="yearLetra">Dos Mil
+          Veintidós</span>. -
+    </section>
+    <section class="sellosDgipe">
+      <h4 class="main__h4">Sello D.G.I.P.E.</h4>
+      <h4 class="main__h4 firma">----------------------------<br>Sello y Firma del funcionario</h4>
+    </section>
     <form class="main__form" action="">
       <h2 class="form__h2"> Datos de la persona</h2>
       <div class="main__div"> <label for="cargo" class="main__form__label">
           <span>Cargo o Asignatura</span>
-          <input type="text" name="cargo" id="cargo" class="main__input" placeholder="Ej: Profesor Matematica"  maxlength="35"/>
+          <input type="text" name="cargo" id="cargo" class="main__input" placeholder="Ej: Profesor Matematica"
+            maxlength="35" />
         </label>
       </div>
       <div class="label--flex">
         <div class="main__div">
           <label for="hora" class="main__form__label">
             Horas
-            <input type="text" name="hora" id="hora" class="main__input" placeholder="XX" maxlength="2"/>
+            <input type="text" name="hora" id="hora" class="main__input" placeholder="XX" maxlength="2" />
           </label>
         </div>
         <div class="main__div">
@@ -92,7 +132,7 @@
         <div class="main__div">
           <label for="diaAlta" class="main__form__label">
             Dia
-            <input type="text" name="diaAlta" id="diaAlta" class="main__input" placeholder="DD" maxlength="2"/>
+            <input type="text" name="diaAlta" id="diaAlta" class="main__input" placeholder="DD" maxlength="2" />
           </label>
         </div>
         <div class="main__div">
@@ -104,13 +144,13 @@
         <div class="main__div">
           <label for="añoAlta" class="main__form__label">
             Año
-            <input type="text" name="añoAlta" id="añoAlta" class="main__input" placeholder="AAAA" maxlength="4"/>
+            <input type="text" name="añoAlta" id="añoAlta" class="main__input" placeholder="AAAA" maxlength="4" />
           </label>
         </div>
       </div>
       <label for="continua" class="label--checkbox">
         Marcar si continua
-        <input type="checkbox" name="continua" id="continua" class="main__input--checkbox"/>
+        <input type="checkbox" name="continua" id="continua" class="main__input--checkbox" />
       </label>
       <h3 id="h3" class="input__h3">Fecha de Baja</h3>
       <div class="label--flex">
@@ -118,13 +158,13 @@
           <div class="main__div">
             <label for="diaBaja" class="main__form__label">
               Dia
-              <input type="text" name="dia2" id="diaBaja" class="main__input" placeholder="DD" maxlength="2"/>
+              <input type="text" name="dia2" id="diaBaja" class="main__input" placeholder="DD" maxlength="2" />
             </label>
           </div>
           <div class="main__div">
             <label for="mesBaja" class="main__form__label">
               Mes
-              <input type="text" name="mes2" id="mesBaja" class="main__input" placeholder="MM" maxlength="2"/>
+              <input type="text" name="mes2" id="mesBaja" class="main__input" placeholder="MM" maxlength="2" />
             </label>
           </div>
           <div class="main__div"> <label for="añoBaja" class="main__form__label">

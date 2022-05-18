@@ -27,6 +27,7 @@ function continuidad() {
 }
 
 function enviarDatos() {
+  
   function celdaContinua(diaBaja, mesBaja, añoBaja) {
     if (diaBaja == "" && mesBaja == "" && añoBaja == "") {
       tdContinua.colSpan = 3;
