@@ -20,9 +20,10 @@
     <section class="section">
       <p class="main__p">Nivel: Secundario <br>
         Ubicado en: Belgrano Nº 269. Centro. Córdoba. Capital.</p>
-      <p class="main__p">Certifico con carácter de Declaración Jurada que <span class="persona">BORRASTERO Matias
-          Alejandro</span> D.N.I. N°:
-        <span class="dni">39.057.240</span>, prestó/a en el Establecimiento arriba mencionado los servicios docentes que
+      <p class="main__p">Certifico con carácter de Declaración Jurada que <span
+          class="personaApellido"></span> <span class="personaNombre"></span>
+        D.N.I. N°:
+        <span class="dni"></span>, prestó/a en el Establecimiento arriba mencionado los servicios docentes que
         a continuación se detallan:
       </p>
     </section>
@@ -42,13 +43,16 @@
           <td rowspan="2" class="main__tabla__col">Dias</td>
           <td rowspan="2" class="main__tabla__col">Observaciones</td>
         </tr>
-        <tr>
+        <tr id="">
           <td class="main__tabla__col">Dia</td>
           <td class="main__tabla__col">Mes</td>
           <td class="main__tabla__col">Año</td>
           <td class="main__tabla__col">Dia</td>
           <td class="main__tabla__col">Mes</td>
           <td class="main__tabla__col">Año</td>
+        </tr>
+        <tr id="prueba">
+
         </tr>
       </tbody>
     </table>
@@ -62,9 +66,9 @@
 
     <section class="sellos">
       <h4 class="main__h4">Sello Instituto</h4>
-      <h4 class="main__h4 firma">----------------------------<br>Firma Representante Legal</h4>
+      <h4 class="main__h4 firma">-----------------------------------<br>Firma Representante Legal</h4>
     </section>
-    
+
     <section class="section">
       <p class="main__p">
         El funcionario que suscribe Certifica que la firma que antecede pertenece a <span
@@ -75,10 +79,26 @@
     </section>
     <section class="sellosDgipe">
       <h4 class="main__h4">Sello D.G.I.P.E.</h4>
-      <h4 class="main__h4 firma">----------------------------<br>Sello y Firma del funcionario</h4>
+      <h4 class="main__h4 firma">-------------------------------------<br>Sello y Firma del funcionario</h4>
     </section>
+
     <form class="main__form" action="">
       <h2 class="form__h2"> Datos de la persona</h2>
+      <div class="label--flex">
+        <div class="main__div"><label for="apellido" class="main__form__label"> Apellido
+          <input type="text" name="apellido" id="apellido" placeholder="Apellido"  class="main__input">
+        </label>
+      </div>
+        <div class="main__div"><label for="nombre" class="main__form__label"> Nombre
+          <input type="text" name="nombre" id="nombre" placeholder="Nombre"  class="main__input">
+        </label>
+      </div>
+      <div class="main__div">
+        <label for="dni" class="main__form__label"> DNI
+          <input type="text" name="dni" id="dni" placeholder="DNI"  class="main__input">
+        </label>
+      </div>  
+      </div>
       <div class="main__div"> <label for="cargo" class="main__form__label">
           <span>Cargo o Asignatura</span>
           <input type="text" name="cargo" id="cargo" class="main__input" placeholder="Ej: Profesor Matematica"
@@ -174,11 +194,23 @@
           </div>
         </div>
       </div>
+      <div class="label--flex">
+        <div class="main__div"><label for="licencia" class="main__form__label"> Licencia sin goce de haberes 
+          <input type="text" name="licencia" id="licencia" placeholder="desde...hasta..."  class="main__input">
+        </label>
+      </div>
+        <div class="main__div">
+          <label for="fechaEmision" class="main__form__label"> Fecha de emision
+          <input type="text" name="fechaEmision" id="fechaEmision" placeholder="dd/mm/aaaa"  class="main__input">
+        </label>
+        </div>  
+      </div>
       <input id="button" type="submit" class="main__input--button"></button>
     </form>
   </div>
 </body>
 <script src="form.js"></script>
+<script src="datos-personales.js"></script>
 <script src="calculo-res.js"></script>
 <script src="calculo-antiguedad.js"></script>
 <script src="detalles.js"></script>

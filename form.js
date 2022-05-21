@@ -5,6 +5,20 @@ function prevenirDefault(event) {
   event.preventDefault();
 }
 
+function datosPersonales(){
+  let personaApellido = document.querySelector(".personaApellido");
+  let personaNombre = document.querySelector(".personaNombre");
+  let personaDni = document.querySelector(".dni");
+  let form = document.querySelector("form");
+  let apellidoInput = form.apellido.value;
+  let nombreInput = form.nombre.value;
+  let dniInput = form.dni.value;
+
+  personaApellido.innerHTML = apellidoInput;
+  personaNombre.innerHTML = nombreInput;
+  personaDni.innerHTML = dniInput;
+}
+
 function continuidad() {
   let diaBaja = document.querySelector("#diaBaja");
   let mesBaja = document.querySelector("#mesBaja");
@@ -27,7 +41,7 @@ function continuidad() {
 }
 
 function enviarDatos() {
-  
+
   function celdaContinua(diaBaja, mesBaja, añoBaja) {
     if (diaBaja == "" && mesBaja == "" && añoBaja == "") {
       tdContinua.colSpan = 3;
@@ -77,7 +91,7 @@ function enviarDatos() {
   let tdMesTotal = document.createElement("td");
   let tdAñoTotal = document.createElement("td");
   let tdObservacion = document.createElement("td");
-  let tabla = document.querySelector("#tabla");
+  let tabla = document.querySelector("#prueba"); //Pendiente
 
   tdCargo.textContent = cargo;
   tdHora.textContent = hora;
@@ -110,6 +124,8 @@ function enviarDatos() {
   trFila.appendChild(tdDiaTotal);
   trFila.appendChild(tdObservacion);
   tabla.appendChild(trFila);
+
+  datosPersonales();
 }
 
 // Eventos
