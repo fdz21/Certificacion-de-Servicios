@@ -1,7 +1,6 @@
 function licenciaGoce(licencia){
       if (licencia == ""){
           licencia = ".-";
-          console.log(licencia)
       }
       return licencia
   }

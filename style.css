@@ -63,6 +63,7 @@ td{
     flex-wrap: wrap;
     align-items: center;
     flex-direction: column;
+    text-align: center;
 }
 .label--flex{
     display: flex;
