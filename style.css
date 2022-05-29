@@ -1,7 +1,6 @@
 *{
     box-sizing: border-box;
 }
-
 .main{
     display: flex;
     flex-direction: column;
@@ -10,16 +9,18 @@
 }
 .main__h1{
     text-align: center;
+    margin-bottom: 5%;
 }
 .header{
     text-align: center;
+    margin-bottom: 5%;
 }
 .sellos{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: flex-end;
-    margin-left: 500px;
+    margin-left: 400px;
     margin-top: 100px;
 }
 .sellosDgipe{
@@ -28,19 +29,49 @@
     flex-wrap: wrap;
     align-items: flex-end;
     margin-top: 100px;
+    margin-left: 150px;
 }
-
+#btnImprimir{
+    display: block;
+    width: 15%;
+    margin: auto;
+    padding: 15px;
+    border: #2d3436;
+    border-radius: 30px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #2d3436;
+    transition: all 100ms;
+}
+#btnImprimir:hover{
+    font-size: 22px;
+    transition: all 500ms;
+    background-color: #0984e3;
+    /* background-color: #2d6d60; */
+}
+.section{
+    margin-bottom: 2%;
+}
 /* Tabla */
 
 .main__tabla{
     background-color: #fff;
-    border: 1px solid gray;
+    border: 1px solid black;
+    margin-bottom: 5%;
 }
 
 .main__tabla__col{
     border: 1px solid black;
     padding: 10px;
     text-align: center;
+}
+.main__tabla__textarea{
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    outline: none;
+    resize: none;
+    font-weight: bold;
 }
 tr{
     text-align: center;  
@@ -111,9 +142,6 @@ select{
     border-radius: 5px;
     background-color: #fff;
 }
-select:focus{
-    outline:    ;
-}
 
 .container--h3{
     display: block;
@@ -132,9 +160,12 @@ select:focus{
 .div--baja{
     display: none;
 }
+.div--antiguedad{
+    display: none;
+}
 .main__input--button{
     display: block;
-    width: 15%;
+    width: 30%;
     margin: auto;
     padding: 15px;
     border: #2d3436;

@@ -79,7 +79,7 @@ function enviarDatos() {
   let tdMesTotal = document.createElement("td");
   let tdAñoTotal = document.createElement("td");
   let tdObservacion = document.createElement("td");
-  let tabla = document.querySelector("#prueba"); //Pendiente
+  let tabla = document.querySelector("#tabla"); 
 
   tdCargo.textContent = cargo;
   tdHora.textContent = hora;
@@ -119,9 +119,41 @@ function enviarDatos() {
   yearDeEmision();
 }
 
+function bloqueAntiguedadTotalVisible(){
+  let divAntiguedad = document.querySelector("#antiguedadDiv");
+   if (divAntiguedad.classList.contains("div--antiguedad")){
+     divAntiguedad.classList.remove("div--antiguedad");
+   }
+   else {
+    divAntiguedad.classList.add("div--antiguedad");
+   }
+}
+
+
+function enviarDatosAntiguedad() {
+  let form = document.querySelector("form");
+  let antiguedadYear = form.totalAntiguedadYear.value;
+  let antiguedadMes = form.totalAntiguedadMes.value;
+  let antiguedadDia = form.totalAntiguedadDia.value;
+
+  let textareaYear = document.querySelector("#textareaYear");
+  let textareaMes = document.querySelector("#textareaMes");
+  let textareaDia = document.querySelector("#textareaDia");
+
+  textareaYear.innerHTML = antiguedadYear;
+  textareaMes.innerHTML = antiguedadMes;
+  textareaDia.innerHTML = antiguedadDia;
+}
 // Eventos
 const button = document.querySelector("#button");
 button.addEventListener("click", prevenirDefault);
 button.addEventListener("click", enviarDatos);
 const continua = document.querySelector("#continua");
 continua.addEventListener("click", continuidad);
+const buttonAntiguedad = document.querySelector("#buttonAntiguedad");
+button.addEventListener("click", prevenirDefault);
+const checkboxAntiguedad = document.querySelector("#antiguedadTotal");
+checkboxAntiguedad.addEventListener("click", bloqueAntiguedadTotalVisible);
+buttonAntiguedad.addEventListener("click", enviarDatosAntiguedad);
+
+

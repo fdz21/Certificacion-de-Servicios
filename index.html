@@ -11,92 +11,113 @@
 
 <body>
   <div class="main">
-    <header class="header">
-      <h1 class="main__h1">Certificacion de Servicios</h1>
-      <h2 class="main__h2">Instituto Privado Incorporado (Adscripto) a la Enseñanza Oficial <br><span>INSTITUTO “NUESTRA
-          SEÑORA DEL HUERTO”</span>
-      </h2>
-    </header>
-    <section class="section">
-      <p class="main__p">Nivel: Secundario <br>
-        Ubicado en: Belgrano Nº 269. Centro. Córdoba. Capital.</p>
-      <p class="main__p">Certifico con carácter de Declaración Jurada que <span
-          class="personaApellido"></span> <span class="personaNombre"></span>
-        D.N.I. N°:
-        <span class="dni"></span>, prestó/a en el Establecimiento arriba mencionado los servicios docentes que
-        a continuación se detallan:
-      </p>
-    </section>
-    <table class="main__tabla">
-      <tbody id="tabla">
-        <tr>
-          <td rowspan="2" class="main__tabla__col">
-            Cargo o Asignatura Código
-          </td>
-          <td rowspan="2" class="main__tabla__col">Horas</td>
-          <td rowspan="2" class="main__tabla__col">Titular Suplente</td>
-          <td rowspan="2" class="main__tabla__col">Resolución Nº</td>
-          <td colspan="3" class="main__tabla__col">Alta</td>
-          <td colspan="3" class="main__tabla__col">Baja</td>
-          <td rowspan="2" class="main__tabla__col">Años</td>
-          <td rowspan="2" class="main__tabla__col">Meses</td>
-          <td rowspan="2" class="main__tabla__col">Dias</td>
-          <td rowspan="2" class="main__tabla__col">Observaciones</td>
-        </tr>
-        <tr id="">
-          <td class="main__tabla__col">Dia</td>
-          <td class="main__tabla__col">Mes</td>
-          <td class="main__tabla__col">Año</td>
-          <td class="main__tabla__col">Dia</td>
-          <td class="main__tabla__col">Mes</td>
-          <td class="main__tabla__col">Año</td>
-        </tr>
-        <tr id="prueba">
+    <!-- Contenido que se imprime -->
+    <div id="imprimible">
+      <header class="header">
+        <h1 class="main__h1">Certificacion de Servicios</h1>
+        <h2 class="main__h2">Instituto Privado Incorporado (Adscripto) a la Enseñanza Oficial <br><span>INSTITUTO
+            “NUESTRA
+            SEÑORA DEL HUERTO”</span>
+        </h2>
+      </header>
+      <section class="section">
+        <p class="main__p">Nivel: Secundario <br>
+          Ubicado en: Belgrano Nº 269. Centro. Córdoba. Capital.</p>
+        <p class="main__p">Certifico con carácter de Declaración Jurada que <span class="personaApellido"></span> <span
+            class="personaNombre"></span>
+          D.N.I. N°:
+          <span class="dni"></span>, prestó/a en el Establecimiento arriba mencionado los servicios docentes que
+          a continuación se detallan:
+        </p>
+      </section>
+      <table class="main__tabla">
+        <tbody id="tabla">
+          <tr>
+            <td rowspan="2" class="main__tabla__col">
+              Cargo o Asignatura Código
+            </td>
+            <td rowspan="2" class="main__tabla__col">Horas</td>
+            <td rowspan="2" class="main__tabla__col">Titular Suplente</td>
+            <td rowspan="2" class="main__tabla__col">Resolución Nº</td>
+            <td colspan="3" class="main__tabla__col">Alta</td>
+            <td colspan="3" class="main__tabla__col">Baja</td>
+            <td rowspan="2" class="main__tabla__col">Años</td>
+            <td rowspan="2" class="main__tabla__col">Meses</td>
+            <td rowspan="2" class="main__tabla__col">Dias</td>
+            <td rowspan="2" class="main__tabla__col">Observaciones</td>
+          </tr>
+          <tr id="">
+            <td class="main__tabla__col">Dia</td>
+            <td class="main__tabla__col">Mes</td>
+            <td class="main__tabla__col">Año</td>
+            <td class="main__tabla__col">Dia</td>
+            <td class="main__tabla__col">Mes</td>
+            <td class="main__tabla__col">Año</td>
+          </tr>
+        <tbody id="tabla2">
+          <tr>
+            <td colspan="7"></td>
+            <td colspan="3">Total Antigüedad</td>
+            <td>
+              <textarea id="textareaYear" class="main__tabla__textarea" cols="3" rows="1"></textarea>
+            </td>
+            <td>
+              <textarea id="textareaMes" class="main__tabla__textarea" cols="3" rows="1"></textarea>
+            </td>
+            <td>
+              <textarea id="textareaDia" class="main__tabla__textarea" cols="3" rows="1"></textarea>
+            </td>
+            <td>-------------------</td>
+          </tr>
+        </tbody>
+        </tbody>
+      </table>
+      <section class="section">
+        <p class="main__p">
+          Hizo uso de Licencias sin Goce de Haberes: <span class="licencia"></span> <br><br>
+          Para presentar ante quien corresponda, se extiende el presente en Córdoba Capital a los <span id="dia1"
+            class="dia"></span> días del mes de <span id="mes1" class="mes"></span> del año <span id="year1"
+            class="year"></span>.
+        </p>
+      </section>
 
-        </tr>
-      </tbody>
-    </table>
-    <section class="section">
-      <p class="main__p">
-        Hizo uso de Licencias sin Goce de Haberes: <span class="licencia"></span> <br><br>
-        Para presentar ante quien corresponda, se extiende el presente en Córdoba Capital a los <span
-          id="dia1" class="dia"></span> días del mes de <span id="mes1" class="mes"></span> del año <span id="year1" class="year"></span>.
-      </p>
-    </section>
+      <section class="sellos">
+        <h4 class="main__h4">Sello Instituto</h4>
+        <h4 class="main__h4 firma">-----------------------------------<br>Firma Representante Legal</h4>
+      </section>
 
-    <section class="sellos">
-      <h4 class="main__h4">Sello Instituto</h4>
-      <h4 class="main__h4 firma">-----------------------------------<br>Firma Representante Legal</h4>
-    </section>
-
-    <section class="section">
-      <p class="main__p">
-        El funcionario que suscribe Certifica que la firma que antecede pertenece a <span
-          class="representanteLegal">Fernanda Dotto</span> - Representante Legal
-        de acuerdo a la registrada en esta Repartición.<br>
-        Córdoba, <span id="dia2" class="dia"></span> de <span id="mes2" class="mes"></span> de <span id="year2" class="year"></span>. -
-    </section>
-    <section class="sellosDgipe">
-      <h4 class="main__h4">Sello D.G.I.P.E.</h4>
-      <h4 class="main__h4 firma">-------------------------------------<br>Sello y Firma del funcionario</h4>
-    </section>
-
+      <section class="section">
+        <p class="main__p">
+          El funcionario que suscribe Certifica que la firma que antecede pertenece a <span
+            class="representanteLegal">Andrea Artal</span> - Representante Legal
+          de acuerdo a la registrada en esta Repartición.<br>
+          Córdoba, <span id="dia2" class="dia"></span> de <span id="mes2" class="mes"></span> de <span id="year2"
+            class="year"></span>. -
+      </section>
+      <section class="sellosDgipe">
+        <h4 class="main__h4">Sello D.G.I.P.E.</h4>
+        <h4 class="main__h4 firma">-------------------------------------<br>Sello y Firma del funcionario</h4>
+      </section>
+    </div>
+    <!-- Boton de Imprimir -->
+    <button id="btnImprimir">Imprimir</button>
+    <!-- Comienzo del Formulario -->
     <form class="main__form" action="">
       <h2 class="form__h2"> Datos de la persona</h2>
       <div class="label--flex">
         <div class="main__div"><label for="apellido" class="main__form__label"> Apellido
-          <input type="text" name="apellido" id="apellido" placeholder="Apellido"  class="main__input">
-        </label>
-      </div>
+            <input type="text" name="apellido" id="apellido" placeholder="Apellido" class="main__input">
+          </label>
+        </div>
         <div class="main__div"><label for="nombre" class="main__form__label"> Nombre
-          <input type="text" name="nombre" id="nombre" placeholder="Nombre"  class="main__input">
-        </label>
-      </div>
-      <div class="main__div">
-        <label for="dni" class="main__form__label"> DNI
-          <input type="text" name="dni" id="dni" placeholder="DNI"  class="main__input">
-        </label>
-      </div>  
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="main__input">
+          </label>
+        </div>
+        <div class="main__div">
+          <label for="dni" class="main__form__label"> DNI
+            <input type="text" name="dni" id="dni" placeholder="DNI" class="main__input">
+          </label>
+        </div>
       </div>
       <div class="main__div"> <label for="cargo" class="main__form__label">
           <span>Cargo o Asignatura</span>
@@ -194,18 +215,51 @@
         </div>
       </div>
       <div class="label--flex">
-        <div class="main__div"><label for="licencia" class="main__form__label"> Licencia sin goce de haberes 
-          <input type="text" name="licencia" id="licencia" placeholder="desde...hasta..."  class="main__input">
-        </label>
-      </div>
+        <div class="main__div"><label for="licencia" class="main__form__label"> Licencia sin goce de haberes
+            <input type="text" name="licencia" id="licencia" placeholder="desde...hasta..." class="main__input">
+          </label>
+        </div>
         <div class="main__div">
           <label for="fechaEmision" class="main__form__label"> Fecha de emision
-          <input type="date" name="fechaEmision" id="fechaEmision" placeholder="dd/mm/aaaa"  class="main__input">
-        </label>
-        </div>  
+            <input type="date" name="fechaEmision" id="fechaEmision" placeholder="dd/mm/aaaa" class="main__input">
+          </label>
+        </div>
       </div>
-      <input id="button" type="submit" class="main__input--button"></button>
-    </form>
+      <label for="antiguedadTotal" class="label--checkbox">
+        Definir Antiguedad Total
+        <input type="checkbox" name="antiguedadTotal" id="antiguedadTotal" class="main__input--checkbox" />
+      </label>
+      <div id="antiguedadDiv" class="div--antiguedad">
+        <div class="label--flex">
+          <div class="main__div">
+            <label for="totalAntiguedadYear" class="main__form__label">
+              Año
+              <input type="text" name="totalAntiguedadYear" id="totalAntiguedadYear" class="main__input"
+                placeholder="AA" maxlength="2" />
+            </label>
+          </div>
+          <div class="main__div">
+            <label for="totalAntiguedadMes" class="main__form__label">
+              Mes
+              <input type="text" name="totalAntiguedadMes" id="totalAntiguedadMes" class="main__input" placeholder="MM"
+                maxlength="2" />
+            </label>
+          </div>
+          <div class="main__div">
+            <label for="totalAntiguedadDia" class="main__form__label">
+              Dia
+              <input type="text" name="totalAntiguedadDia" id="totalAntiguedadDia" class="main__input" placeholder="DD"
+                maxlength="2" />
+            </label>
+          </div>
+          <input id="buttonAntiguedad" type="button" value="Declarar Antiguedad Total" class="main__input--button">
+        </div>
+      </div>
+  </div>
+
+  <input id="button" type="button" class="main__input--button" value="Enviar"></button>
+
+  </form>
   </div>
 </body>
 <script src="form.js"></script>
@@ -214,5 +268,6 @@
 <script src="calculo-antiguedad.js"></script>
 <script src="detalles.js"></script>
 <script src="fecha-emision.js"></script>
+<script src="imprimir.js"></script>
 
 </html>
